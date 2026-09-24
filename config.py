@@ -14,6 +14,8 @@ GROQ_API_KEY = os.getenv("GROQ_API_KEY", "")
 GROQ_MODEL = os.getenv("GROQ_MODEL", "llama-3.3-70b-versatile")
 
 EMBEDDING_MODEL = "sentence-transformers/all-MiniLM-L6-v2"   # 384 dimensional
+for _d in (REPORTS_DIR, VECTORSTORE_DIR, SENTIMENT_MODEL_DIR.parent):
+    _d.mkdir(parents=True, exist_ok=True)   # create folders on first run
 CHUNK_SIZE = 800
 CHUNK_OVERLAP = 100
 TOP_K = 4
