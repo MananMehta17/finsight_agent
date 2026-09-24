@@ -1,0 +1,16 @@
+langchain
+langgraph
+langchain-groq
+langchain-community
+langchain-huggingface
+langchain-text-splitters
+sentence-transformers
+faiss-cpu
+pypdf
+yfinance
+pandas
+streamlit
+python-dotenv
+# only needed if you use the fine tuned sentiment model locally
+transformers
+torch
